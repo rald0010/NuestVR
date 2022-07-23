@@ -4,7 +4,11 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>VR Coffe Shop</title>
     <style>
         h1,
@@ -16,8 +20,8 @@
             font-family: "Playfair Display";
             letter-spacing: 5px;
         }
-    
-        
+
+
 
         .container1 {
             width: 200px;
@@ -155,28 +159,66 @@
             }
         }
     </style>
+
+
+    <style>
+        .site-name-pr {
+            font-style: italic;
+            font-family: Lobster;
+            font-size: 35px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            line-height: 1.2;
+            text-transform: inherit;
+        }
+    </style>
+
+
+
 </head>
 
 <body>
 
-    <!-- Navbar (sit on top) -->
-    <div class="w3-top">
-        <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
-            <a href="#home" class="w3-bar-item w3-button">Café Ecija</a>
-            <!-- Right-sided navbar links. Hide them on small screens -->
-            <div class="w3-right w3-hide-small">
-                <a href="#about" class="w3-bar-item w3-button">About</a>
-                <a href="#menu" class="w3-bar-item w3-button">Menu</a>
-                
-            </div>
+    <nav id="nav" class="navbar navbar-expand-lg fixed-top" style="min-height: 90px;background-color:rgba(89, 89, 89, 0.6); color: #f8f9fa;">
+        <div class="container-fluid" style="color: white;">
+            <a href="#home" class="navbar-brand" style="color: #f8f9fa;margin-left: 15%;">
+                <h4 class="site-name-pr">NEUST Virtual Reality Platform for EduTourism</h4>
+            </a>
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" style="color: #f8f9fa;margin-right: 20%;" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" style="color: white;" aria-current="page" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color: white;" href="#">360 VIRTUAL TOUR</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color: white;" href="#">COFFEE BARISTA COURSE</a>
+              </li>
+            </ul>
+            
+          </div>
         </div>
-    </div>
+      </nav>
+    
+
+  
+
+
+
+    
+    <!-- Navbar (sit on top) -->
+
 
     <!-- Header -->
-    <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
-        <img class="w3-image" src="./assets/cafe.jpg" alt="Hamburger Café Ecija" width="1600" height="800">
+    <header class="w3-display-container w3-content w3-wide" style="max-width:100%;min-width:100px" id="home">
+        <img class="w3-image" src="./assets/bg.jpg" alt="Hamburger Kape Ecija" width="100%" height="800">
         <div class="w3-display-bottomleft w3-padding-large w3-opacity">
-            <h1 class="w3-xxlarge">Café Ecija</h1>
+            <h1 class="w3-xxlarge">Kape Ecija</h1>
         </div>
     </header>
 
@@ -185,44 +227,64 @@
 
         <!-- About Section -->
         <div class="w3-row w3-padding-64" id="about">
-            <div class="w3-col m6 w3-padding-large w3-hide-small">
-                <img src="./assets/tablesetting2.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting"
-                    width="600" height="750">
+            <div class="w3-col m6 w3-padding-large w3-hide-small" style="margin-top: 20%;">
+                <iframe title="NEUST VR Edutourism Official Video" width="530" height="411"
+                    src="https://www.youtube.com/embed/8gYwTwwrCC8?feature=oembed" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen=""></iframe>
             </div>
 
             <div class="w3-col m6 w3-padding-large">
-                <h1 class="w3-center">About Café Ecija</h1><br>
+                <h1 class="w3-center">About the VR Edutourism Project</h1><br>
                 <h5 class="w3-center">Tradition since 1889</h5>
-                <p class="w3-large">Cafe Ecija is Harvest Hotel's exceptional in-house dining restaurant. It serves sumptuous Filipino favorites and intercontinental cuisines. Experience comfort food at its finest!
-                     
+                <p class="w3-large">This project focuses on promoting NEUST-Gabaldon as a center for agricultural and
+                    ecological educational tourism through the development of a virtual reality edutourism experience.
+                    <br>
+                <p>Specifically, it aims<br>
+                    • develop, implement, and promote an alternative system for agricultural and ecological educational
+                    tourism through virtual
+                    reality learning experiences;
+                    <br>• highlight the institution’s agricultural technological innovations and the locale’s natural
+                    and man-made attractions and key cultural resources through virtual reality platform;
+                    <br>• develop and implement virtual reality learning and training programs and lifelong education
+                    programs for local and foreign edutourists;
+                    <br>• integrate global learning into educational tourism products and services; and
+                    <br>• intensify home-border internationalization efforts of the institution by strengthening
+                    partnership and linkages with other HEIs and FHEIs.
+                </p>
+
             </div>
         </div>
 
         <hr>
 
         <!-- Menu Section -->
-        <div class="w3-row w3-padding-64" id="menu">
+        <div class="w3-row w3-padding-64" id="360vr">
             <div class="w3-col l6 w3-padding-large">
-                <h1 class="w3-center">Our Menu</h1><br>
-                <h4>Bread Basket</h4>
-                <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+                <h1 class="w3-center">Online Barista Course with 3D VR</h1><br>
+                <h4>Virtual Reality Experience of Earth to Cup Coffee Production</h4>
+                <p class="w3-text-grey">The edutourism packages included in the VR platform will be designed to reflect
+                    not only international
+                    content and dimension, but also responsiveness to local and cultural issues. These packages can also
+                    be utilized for virtual student learning and mobility activities, in partnership with other local
+                    and foreign HEIs. The University can continuously impart knowledge to edutourists, and cater to
+                    their needs for lifelong learning, while building on international partnerships with foreign higher
+                    education
+                    institutions.</p><br>
 
-                <h4>Honey Almond Granola with Fruits</h4>
-                <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
 
-                <h4>Belgian Waffle</h4>
-                <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
+                <p class="w3-text-grey">The VR edutourism platform can also be used to promote other advocacies in line
+                    with the United Nations’ Sustainable Development Goals through edutourism packages featuring
+                    relevant discussions of glocal issues. Edutour packages such as One with Nature for example, will
+                    give edutourists the opportunity to be virtually immersed in community-based forest resource
+                    management program
+                    and other environmental conservation activities of the University.</p><br>
 
-                <h4>Scrambled eggs</h4>
-                <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
 
-                <h4>Blueberry Pancakes</h4>
-                <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>
             </div>
 
-            <div class="w3-col l6 w3-padding-large">
-                <img src="./assets/tablesetting.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu"
-                    style="width:100%">
+            <div class="w3-col l6 w3-padding-large" style="margin-top: 20%;">
+                <img src="./assets/3dvr.png" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
             </div>
         </div>
 
@@ -234,8 +296,8 @@
     </div>
 
     <!-- Footer -->
-    <footer class="w3-center w3-light-grey w3-padding-32">
-     
+    <footer class="w3-center w3-padding-32" style="background-color: #009999;">
+
     </footer>
 
 
@@ -255,8 +317,24 @@
     </svg>
 
     <div id="container"></div>
+    <script>
+        $(document).ready(function () {
+            var scroll_pos = 0;
+            $(document).scroll(function () {
+                scroll_pos = $(this).scrollTop();
+                if (scroll_pos > 210) {
+                    $('#nav').css('background-color', '#009999');
+                } else {
+                    $('#nav').css('background-color', 'rgba(89, 89, 89, 0.6)');
+                }
+            });
+        });
+    </script>
 
     <script type="module" src="bundle.js"></script>
+
+
+
 
 </body>
 
